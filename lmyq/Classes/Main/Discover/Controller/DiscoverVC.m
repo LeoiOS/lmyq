@@ -18,6 +18,11 @@
     
     [super viewDidLoad];
     
+    [self setupMainView]
+}
+
+- (void)setupMainView {
+    
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"bg"];
     self.tableView.backgroundView = bgView;
