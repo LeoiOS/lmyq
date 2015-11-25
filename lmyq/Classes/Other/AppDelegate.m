@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BaseNavController.h"
+#import <MAMapKit/MAMapKit.h>
 
 @interface AppDelegate ()
 
@@ -52,6 +53,7 @@
     [BaseNavController setupNavTheme];
     
     
+    [MAMapServices sharedServices].apiKey = MAP_KEY;
     
     
     
