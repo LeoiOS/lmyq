@@ -16,8 +16,72 @@
                     <view key="view" contentMode="scaleToFill" id="npm-dP-6x0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-iV-ffv">
+                                <rect key="frame" x="20" y="84" width="560" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="M6z-PB-ktY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-gr-RpY">
+                                <rect key="frame" x="20" y="144" width="560" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ePr-3b-Bcw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-j0-bnZ">
+                                <rect key="frame" x="20" y="262" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vIi-3a-wbP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTg-dO-XRl">
+                                <rect key="frame" x="480" y="192" width="100" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="54d-wn-B0Y"/>
+                                    <constraint firstAttribute="width" constant="100" id="EIm-hv-Ewa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="忘记密码？"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbq-Ui-lWH">
+                                <rect key="frame" x="20" y="530" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="guZ-CC-vOI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DoI-iV-ffv" firstAttribute="leading" secondItem="npm-dP-6x0" secondAttribute="leading" constant="20" id="2G2-kf-Ixc"/>
+                            <constraint firstAttribute="trailing" secondItem="cd3-gr-RpY" secondAttribute="trailing" constant="20" id="6dx-Bl-z9a"/>
+                            <constraint firstItem="9Pi-j0-bnZ" firstAttribute="top" secondItem="PTg-dO-XRl" secondAttribute="bottom" constant="40" id="6z3-G6-rT4"/>
+                            <constraint firstItem="cd3-gr-RpY" firstAttribute="leading" secondItem="npm-dP-6x0" secondAttribute="leading" constant="20" id="8sB-rQ-R08"/>
+                            <constraint firstItem="Xbq-Ui-lWH" firstAttribute="leading" secondItem="npm-dP-6x0" secondAttribute="leading" constant="20" id="D1E-vf-QQb"/>
+                            <constraint firstAttribute="bottom" secondItem="Xbq-Ui-lWH" secondAttribute="bottom" constant="40" id="Dcz-xV-4mG"/>
+                            <constraint firstAttribute="trailing" secondItem="9Pi-j0-bnZ" secondAttribute="trailing" constant="20" id="KqQ-XW-GDp"/>
+                            <constraint firstItem="9Pi-j0-bnZ" firstAttribute="leading" secondItem="npm-dP-6x0" secondAttribute="leading" constant="20" id="Lv2-PR-hF7"/>
+                            <constraint firstAttribute="trailing" secondItem="DoI-iV-ffv" secondAttribute="trailing" constant="20" id="QvL-yl-nda"/>
+                            <constraint firstItem="cd3-gr-RpY" firstAttribute="top" secondItem="DoI-iV-ffv" secondAttribute="bottom" constant="20" id="WeP-S7-fWj"/>
+                            <constraint firstItem="DoI-iV-ffv" firstAttribute="top" secondItem="npm-dP-6x0" secondAttribute="top" constant="84" id="YeN-CS-LzK"/>
+                            <constraint firstAttribute="trailing" secondItem="PTg-dO-XRl" secondAttribute="trailing" constant="20" id="fUd-NS-NpO"/>
+                            <constraint firstItem="PTg-dO-XRl" firstAttribute="top" secondItem="cd3-gr-RpY" secondAttribute="bottom" constant="8" id="qUk-7k-EcR"/>
+                            <constraint firstAttribute="trailing" secondItem="Xbq-Ui-lWH" secondAttribute="trailing" constant="20" id="x9X-qh-d5c"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登录" id="zKc-dx-AeB"/>
                     <connections>

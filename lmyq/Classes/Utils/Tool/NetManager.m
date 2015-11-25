@@ -63,4 +63,16 @@
     }];
 }
 
+- (void)getSystemTimeSuccess:(SuccessBlock)success failure:(FailureBlock)failure {
+    
+    [self GET:SYS_TIME parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        success(operation, responseObject);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        failure(operation, error);
+    }];
+}
+
 @end

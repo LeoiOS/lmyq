@@ -26,10 +26,10 @@
  */
 - (void)setupMainView {
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"登录"
-                                                                              style:UIBarButtonItemStyleDone
-                                                                             target:self
-                                                                             action:@selector(loginBtnClicked)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"登录"
+//                                                                              style:UIBarButtonItemStyleDone
+//                                                                             target:self
+//                                                                             action:@selector(loginBtnClicked)];
     
 }
 
