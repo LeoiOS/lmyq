@@ -14,6 +14,8 @@
 		B344FCC01C055E7E00B069AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B344FCBF1C055E7E00B069AB /* Main.storyboard */; };
 		B344FCC21C055F1200B069AB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B344FCC11C055F1200B069AB /* Login.storyboard */; };
 		B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCC41C055F2E00B069AB /* LoginVC.m */; };
+		B344FCCA1C0563A700B069AB /* ForgetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCC91C0563A700B069AB /* ForgetPasswordVC.m */; };
+		B344FCCD1C0563B700B069AB /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCCC1C0563B700B069AB /* RegisterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		B344FCC41C055F2E00B069AB /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		B344FCC61C055F9800B069AB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B344FCC71C05602200B069AB /* CONST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
+		B344FCC81C0563A700B069AB /* ForgetPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordVC.h; sourceTree = "<group>"; };
+		B344FCC91C0563A700B069AB /* ForgetPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordVC.m; sourceTree = "<group>"; };
+		B344FCCB1C0563B700B069AB /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		B344FCCC1C0563B700B069AB /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 			children = (
 				B344FCC31C055F2E00B069AB /* LoginVC.h */,
 				B344FCC41C055F2E00B069AB /* LoginVC.m */,
+				B344FCC81C0563A700B069AB /* ForgetPasswordVC.h */,
+				B344FCC91C0563A700B069AB /* ForgetPasswordVC.m */,
+				B344FCCB1C0563B700B069AB /* RegisterVC.h */,
+				B344FCCC1C0563B700B069AB /* RegisterVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B344FCBF1C055E7E00B069AB /* Main.storyboard */,
-				B344FCB21C055DFB00B069AB /* Home */,
+				B344FCB21C055DFB00B069AB /* Attendance */,
 				B344FCAA1C055DFB00B069AB /* Contacks */,
 				B344FCAE1C055DFB00B069AB /* Discover */,
 				B344FCB61C055DFB00B069AB /* Setting */,
@@ -206,14 +216,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		B344FCB21C055DFB00B069AB /* Home */ = {
+		B344FCB21C055DFB00B069AB /* Attendance */ = {
 			isa = PBXGroup;
 			children = (
 				B344FCB31C055DFB00B069AB /* Controller */,
 				B344FCB41C055DFB00B069AB /* Model */,
 				B344FCB51C055DFB00B069AB /* View */,
 			);
-			path = Home;
+			path = Attendance;
 			sourceTree = "<group>";
 		};
 		B344FCB31C055DFB00B069AB /* Controller */ = {
@@ -357,7 +367,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B344FCCA1C0563A700B069AB /* ForgetPasswordVC.m in Sources */,
 				B344FCBE1C055DFB00B069AB /* AppDelegate.m in Sources */,
+				B344FCCD1C0563B700B069AB /* RegisterVC.m in Sources */,
 				B344FC8E1C055CAC00B069AB /* main.m in Sources */,
 				B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */,
 			);
