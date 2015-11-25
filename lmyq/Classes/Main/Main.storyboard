@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--ContactsVC-->
+        <!--联系人-->
         <scene sceneID="dAr-yK-IBj">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezi-8A-mcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -20,12 +20,12 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3bs-vw-Bf5"/>
+                    <navigationItem key="navigationItem" title="联系人" id="3bs-vw-Bf5"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1269" y="486"/>
         </scene>
-        <!--AttendanceVC-->
+        <!--打卡-->
         <scene sceneID="Qzk-8Z-pnP">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEC-25-cid" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +40,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JO8-yL-QAg"/>
+                    <navigationItem key="navigationItem" title="打卡" id="JO8-yL-QAg"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1269" y="-175"/>
@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="457" y="486"/>
         </scene>
-        <!--DiscoverVC-->
+        <!--发现-->
         <scene sceneID="WtY-fq-Vck">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QvZ-Y9-8hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,7 +121,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kDq-pS-NMz"/>
+                    <navigationItem key="navigationItem" title="发现" id="kDq-pS-NMz"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1269" y="1173"/>
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="457" y="1173"/>
         </scene>
-        <!--SettingVC-->
+        <!--设置-->
         <scene sceneID="2um-9o-HkY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga4-Nt-7LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +161,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qmo-6j-UJC"/>
+                    <navigationItem key="navigationItem" title="设置" id="qmo-6j-UJC"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1269" y="1865"/>

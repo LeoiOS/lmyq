@@ -20,6 +20,7 @@
 		B344FCD31C0564C700B069AB /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD21C0564C700B069AB /* ContactsVC.m */; };
 		B344FCD61C0564FB00B069AB /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD51C0564FB00B069AB /* DiscoverVC.m */; };
 		B344FCD91C05650600B069AB /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD81C05650600B069AB /* SettingVC.m */; };
+		B344FCDD1C0567C100B069AB /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCDC1C0567C100B069AB /* BaseNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		B344FCD51C0564FB00B069AB /* DiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverVC.m; sourceTree = "<group>"; };
 		B344FCD71C05650600B069AB /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		B344FCD81C05650600B069AB /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		B344FCDB1C0567C100B069AB /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
+		B344FCDC1C0567C100B069AB /* BaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,8 +315,18 @@
 		B344FCBD1C055DFB00B069AB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B344FCDA1C05678F00B069AB /* Controller */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B344FCDA1C05678F00B069AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B344FCDB1C0567C100B069AB /* BaseNavController.h */,
+				B344FCDC1C0567C100B069AB /* BaseNavController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +406,7 @@
 				B344FCD01C0564B800B069AB /* AttendanceVC.m in Sources */,
 				B344FCD31C0564C700B069AB /* ContactsVC.m in Sources */,
 				B344FC8E1C055CAC00B069AB /* main.m in Sources */,
+				B344FCDD1C0567C100B069AB /* BaseNavController.m in Sources */,
 				B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */,
 				B344FCD91C05650600B069AB /* SettingVC.m in Sources */,
 				B344FCD61C0564FB00B069AB /* DiscoverVC.m in Sources */,
