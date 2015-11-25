@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscoverVC : UIViewController
+@interface DiscoverVC : UITableViewController
 
 @end
