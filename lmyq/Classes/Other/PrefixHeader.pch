@@ -26,10 +26,12 @@
 // iOS 系统版本号
 #define SYSTEM_VERSION  [[[UIDevice currentDevice] systemVersion] floatValue]
 
+
 // 自定义颜色
 #define ColorWithRBGA(r, g, b, a)   [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
 #define ColorWithRBG(r, g, b)       ColorWithRBGA(r, g, b, 1.0f)
 #define ColorWithValue(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 
 // 自定义打印
 #ifdef DEBUG
@@ -41,6 +43,16 @@
 #define LMLog(...)
 
 #endif
+
+
+
+
+
+
+
+
+
+
 
 
 #endif /* PrefixHeader_pch */
