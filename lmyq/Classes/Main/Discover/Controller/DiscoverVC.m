@@ -18,7 +18,7 @@
     
     [super viewDidLoad];
     
-    [self setupMainView]
+    [self setupMainView];
 }
 
 - (void)setupMainView {

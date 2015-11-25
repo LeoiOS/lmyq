@@ -10,15 +10,23 @@
 #define CONST_h
 
 
-
-
-
 /******************** SDK KEY ********************/
 #pragma mark - SDK KEY
 
 // 高德地图
 #define MAP_KEY_DIS     @"8421fe47839c0241e35dc8c1bf5d58ad"
-#define MAP_KEY_DEV    @"de4dab61ec0094e232ea7ba373c58e22"
+#define MAP_KEY_DEV     @"de4dab61ec0094e232ea7ba373c58e22"
+
+
+
+
+/******************** 常数 ********************/
+#pragma mark - 常数
+
+// 网络超时时间
+#define TIMEOUT_INTERVAL    15.0f
+
+
 
 
 /******************** 主机地址 ********************/

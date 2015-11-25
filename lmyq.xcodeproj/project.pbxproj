@@ -22,6 +22,7 @@
 		B344FCD61C0564FB00B069AB /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD51C0564FB00B069AB /* DiscoverVC.m */; };
 		B344FCD91C05650600B069AB /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD81C05650600B069AB /* SettingVC.m */; };
 		B344FCDD1C0567C100B069AB /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCDC1C0567C100B069AB /* BaseNavController.m */; };
+		B346FC0F1C0595A900814E85 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B346FC0E1C0595A900814E85 /* NetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		B344FCD81C05650600B069AB /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		B344FCDB1C0567C100B069AB /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
 		B344FCDC1C0567C100B069AB /* BaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
+		B346FC0D1C0595A900814E85 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		B346FC0E1C0595A900814E85 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
 		E907BAC9F43B61A34BC67DB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -339,6 +342,7 @@
 		B344FCBD1C055DFB00B069AB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B346FC0C1C05956700814E85 /* Tool */,
 				B344FCDA1C05678F00B069AB /* Controller */,
 			);
 			path = Utils;
@@ -351,6 +355,15 @@
 				B344FCDC1C0567C100B069AB /* BaseNavController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B346FC0C1C05956700814E85 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B346FC0D1C0595A900814E85 /* NetManager.h */,
+				B346FC0E1C0595A900814E85 /* NetManager.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +493,7 @@
 				B344FCCD1C0563B700B069AB /* RegisterVC.m in Sources */,
 				B344FCD01C0564B800B069AB /* AttendanceVC.m in Sources */,
 				B344FCD31C0564C700B069AB /* ContactsVC.m in Sources */,
+				B346FC0F1C0595A900814E85 /* NetManager.m in Sources */,
 				B344FC8E1C055CAC00B069AB /* main.m in Sources */,
 				B344FCDD1C0567C100B069AB /* BaseNavController.m in Sources */,
 				B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */,
