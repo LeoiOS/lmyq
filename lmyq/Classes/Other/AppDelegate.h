@@ -4,7 +4,7 @@
 //
 //  Created by Leo on 15/11/25.
 //  Copyright © 2015年 LanMeng Tec. All rights reserved.
-//
+//  AppDelegate
 
 #import <UIKit/UIKit.h>
 
