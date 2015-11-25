@@ -270,6 +270,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="设置" id="hdl-0O-7gx"/>
+                    <connections>
+                        <outlet property="versionLabel" destination="GJd-yP-ftz" id="tg7-Vx-hcH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtF-oG-S33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

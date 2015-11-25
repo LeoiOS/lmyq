@@ -10,6 +10,8 @@
 
 @interface SettingVC ()
 
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
+
 @end
 
 @implementation SettingVC
@@ -18,9 +20,16 @@
     
     [super viewDidLoad];
     
+    [self setupMainView];
+}
+
+- (void)setupMainView {
+    
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"bg"];
     self.tableView.backgroundView = bgView;
+    
+    self.versionLabel.text = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
