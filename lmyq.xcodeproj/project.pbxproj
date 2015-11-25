@@ -16,6 +16,10 @@
 		B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCC41C055F2E00B069AB /* LoginVC.m */; };
 		B344FCCA1C0563A700B069AB /* ForgetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCC91C0563A700B069AB /* ForgetPasswordVC.m */; };
 		B344FCCD1C0563B700B069AB /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCCC1C0563B700B069AB /* RegisterVC.m */; };
+		B344FCD01C0564B800B069AB /* AttendanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCCF1C0564B800B069AB /* AttendanceVC.m */; };
+		B344FCD31C0564C700B069AB /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD21C0564C700B069AB /* ContactsVC.m */; };
+		B344FCD61C0564FB00B069AB /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD51C0564FB00B069AB /* DiscoverVC.m */; };
+		B344FCD91C05650600B069AB /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B344FCD81C05650600B069AB /* SettingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,14 @@
 		B344FCC91C0563A700B069AB /* ForgetPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordVC.m; sourceTree = "<group>"; };
 		B344FCCB1C0563B700B069AB /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		B344FCCC1C0563B700B069AB /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		B344FCCE1C0564B800B069AB /* AttendanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceVC.h; sourceTree = "<group>"; };
+		B344FCCF1C0564B800B069AB /* AttendanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceVC.m; sourceTree = "<group>"; };
+		B344FCD11C0564C700B069AB /* ContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		B344FCD21C0564C700B069AB /* ContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		B344FCD41C0564FB00B069AB /* DiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverVC.h; sourceTree = "<group>"; };
+		B344FCD51C0564FB00B069AB /* DiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverVC.m; sourceTree = "<group>"; };
+		B344FCD71C05650600B069AB /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		B344FCD81C05650600B069AB /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,26 +159,28 @@
 			children = (
 				B344FCBF1C055E7E00B069AB /* Main.storyboard */,
 				B344FCB21C055DFB00B069AB /* Attendance */,
-				B344FCAA1C055DFB00B069AB /* Contacks */,
+				B344FCAA1C055DFB00B069AB /* Contacts */,
 				B344FCAE1C055DFB00B069AB /* Discover */,
 				B344FCB61C055DFB00B069AB /* Setting */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		B344FCAA1C055DFB00B069AB /* Contacks */ = {
+		B344FCAA1C055DFB00B069AB /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
 				B344FCAB1C055DFB00B069AB /* Controller */,
 				B344FCAC1C055DFB00B069AB /* Model */,
 				B344FCAD1C055DFB00B069AB /* View */,
 			);
-			path = Contacks;
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 		B344FCAB1C055DFB00B069AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B344FCD11C0564C700B069AB /* ContactsVC.h */,
+				B344FCD21C0564C700B069AB /* ContactsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +212,8 @@
 		B344FCAF1C055DFB00B069AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B344FCD41C0564FB00B069AB /* DiscoverVC.h */,
+				B344FCD51C0564FB00B069AB /* DiscoverVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,6 +245,8 @@
 		B344FCB31C055DFB00B069AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B344FCCE1C0564B800B069AB /* AttendanceVC.h */,
+				B344FCCF1C0564B800B069AB /* AttendanceVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +278,8 @@
 		B344FCB71C055DFB00B069AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B344FCD71C05650600B069AB /* SettingVC.h */,
+				B344FCD81C05650600B069AB /* SettingVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -370,8 +390,12 @@
 				B344FCCA1C0563A700B069AB /* ForgetPasswordVC.m in Sources */,
 				B344FCBE1C055DFB00B069AB /* AppDelegate.m in Sources */,
 				B344FCCD1C0563B700B069AB /* RegisterVC.m in Sources */,
+				B344FCD01C0564B800B069AB /* AttendanceVC.m in Sources */,
+				B344FCD31C0564C700B069AB /* ContactsVC.m in Sources */,
 				B344FC8E1C055CAC00B069AB /* main.m in Sources */,
 				B344FCC51C055F2E00B069AB /* LoginVC.m in Sources */,
+				B344FCD91C05650600B069AB /* SettingVC.m in Sources */,
+				B344FCD61C0564FB00B069AB /* DiscoverVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
