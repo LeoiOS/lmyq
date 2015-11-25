@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  lmyq
+//
+//  Created by Leo on 15/11/25.
+//  Copyright © 2015年 LanMeng Tec. All rights reserved.
+//  PCH 文件
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+/******************** 全局头文件 ********************/
+#pragma mark - 全局头文件
+
+#import "CONST.h"
+
+
+
+
+
+/******************** 自定义宏 ********************/
+#pragma mark - 自定义宏
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
