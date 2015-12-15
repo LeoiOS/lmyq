@@ -7,12 +7,19 @@
 //
 
 #import "LoginVC.h"
+#import "NetManager.h"
+#import "AppDelegate.h"
 
 @interface LoginVC ()
 
 @end
 
 @implementation LoginVC
+
+- (void)dealloc {
+    
+    LMLog(@"");
+}
 
 - (void)viewDidLoad {
     
@@ -39,6 +46,24 @@
 - (void)loginBtnClicked {
     
     self.view.window.rootViewController = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
+}
+
+- (IBAction)loginBtnClicked:(UIButton *)sender {
+    
+    NetManager *manager = [NetManager manager];
+    
+    [manager getSystemTimeSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        LMLog(@"%@", responseObject);
+        
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        
+        [appDelegate enterMain];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        LMLog(@"%@", error);
+    }];
 }
 
 @end

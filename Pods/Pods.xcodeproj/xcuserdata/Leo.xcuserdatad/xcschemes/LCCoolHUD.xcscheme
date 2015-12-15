@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F399C1A5FCA37BA5316E38E8'
+               BlueprintIdentifier = 'C91F496704A36087251C6A5C'
                BlueprintName = 'LCCoolHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libLCCoolHUD.a'>

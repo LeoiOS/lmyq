@@ -73,7 +73,7 @@
 #pragma mark - 登录
 
 // 获取系统时间
-#define SYS_TIME            @"mobile/sysTime"
+#define SYS_TIME            HOST    @"/mobile/sysTime"
 
 
 

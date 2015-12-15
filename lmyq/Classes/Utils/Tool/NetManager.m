@@ -21,58 +21,78 @@
     return netManager;
 }
 
-- (void)GET:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure {
+#pragma mark - Base Method
+
+- (void)GET:(NSString *)URLString parameters:(id)parameters progress:(ProgressBlock)progress success:(SuccessBlock)success failure:(FailureBlock)failure {
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = TIMEOUT_INTERVAL;
     
-    [manager GET:URLString parameters:parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [manager GET:[self validURLString:URLString] parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+        progress(downloadProgress);
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
-        success(operation, responseObject);
+        success(task, responseObject);
         
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
-        failure(operation, error);
+        failure(task, error);
+    }];
+}
+
+- (void)GET:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure {
+    
+    return [self GET:URLString parameters:parameters progress:nil success:success failure:failure];
+}
+
+- (void)POST:(NSString *)URLString parameters:(id)parameters progress:(ProgressBlock)progress success:(SuccessBlock)success failure:(FailureBlock)failure {
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = TIMEOUT_INTERVAL;
+    
+    [manager POST:[self validURLString:URLString] parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        progress(uploadProgress);
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        success(task, responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        failure(task, error);
     }];
 }
 
 - (void)POST:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure {
     
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.requestSerializer.timeoutInterval = TIMEOUT_INTERVAL;
-    
-    [manager POST:URLString parameters:parameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        
-        success(operation, responseObject);
-        
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-        
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        
-        failure(operation, error);
-    }];
+    return [self POST:URLString parameters:parameters progress:nil success:success failure:failure];
 }
+
+- (NSString *)validURLString:(NSString * _Nullable)URLString {
+    
+    return [URLString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
+#pragma mark - Common Method
 
 - (void)getSystemTimeSuccess:(SuccessBlock)success failure:(FailureBlock)failure {
     
-    [self GET:SYS_TIME parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        success(operation, responseObject);
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        failure(operation, error);
-    }];
+    [self GET:SYS_TIME parameters:nil success:success failure:failure];
 }
 
 @end

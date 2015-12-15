@@ -10,6 +10,12 @@
 #import "BaseNavController.h"
 #import <MAMapKit/MAMapKit.h>
 
+#import "LCTabBarController.h"
+#import "AttendanceVC.h"
+#import "ContactsVC.h"
+#import "DiscoverVC.h"
+#import "SettingVC.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) UIStoryboard *mainSb;
@@ -59,6 +65,41 @@
     
     
     return YES;
+}
+
+- (void)enterMain {
+    
+    AttendanceVC *attendanceVC = [self.mainSb instantiateViewControllerWithIdentifier:@"AttendanceVC"];
+    attendanceVC.title = @"打卡";
+    attendanceVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_attend"];
+    attendanceVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_attend_sel"];
+    
+    ContactsVC *contactsVC     = [self.mainSb instantiateViewControllerWithIdentifier:@"ContactsVC"];
+    contactsVC.title = @"联系人";
+    contactsVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_contacts"];
+    contactsVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_contacts_sel"];
+    
+    DiscoverVC *discoverVC     = [self.mainSb instantiateViewControllerWithIdentifier:@"DiscoverVC"];
+    discoverVC.title = @"发现";
+    discoverVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
+    discoverVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover_sel"];
+    
+    SettingVC *settingVC       = [self.mainSb instantiateViewControllerWithIdentifier:@"SettingVC"];
+    settingVC.title = @"设置";
+    settingVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_setting"];
+    settingVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_setting_sel"];
+    
+    
+    UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:attendanceVC];
+    UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:contactsVC];
+    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:discoverVC];
+    UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:settingVC];
+    
+    
+    LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
+    tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
+    self.window.rootViewController = tabBarC;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -20,9 +20,13 @@
     
     
     UINavigationBar *navBar = [UINavigationBar appearance];
-    [navBar setBarTintColor:ColorWithRBG(63, 100, 254)];
+    
     [navBar setTintColor:[UIColor whiteColor]];
-    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName
+                                     : [UIColor whiteColor]}];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"navBg"]
+                forBarPosition:UIBarPositionTopAttached
+                    barMetrics:UIBarMetricsDefault];
 }
 
 @end

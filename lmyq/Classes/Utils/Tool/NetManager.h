@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class AFHTTPRequestOperation;
-
-typedef void (^SuccessBlock)(AFHTTPRequestOperation *operation, id responseObject);
-typedef void (^FailureBlock)(AFHTTPRequestOperation *operation, NSError *error);
+typedef void (^ProgressBlock)(NSProgress *netProgress);
+typedef void (^SuccessBlock)(NSURLSessionDataTask * task, id responseObject);
+typedef void (^FailureBlock)(NSURLSessionDataTask * task, NSError * error);
 
 
 @interface NetManager : NSObject
@@ -26,7 +25,18 @@ typedef void (^FailureBlock)(AFHTTPRequestOperation *operation, NSError *error);
 
 
 
-#pragma mark - 通用方法
+#pragma mark - Base Method
+
+/**
+ *  发送 GET 请求 (带进度)
+ *
+ *  @param URLString  接口地址
+ *  @param parameters 参数
+ *  @param progress   进度回调
+ *  @param success    成功回调
+ *  @param failure    失败回调
+ */
+- (void)GET:(NSString *)URLString parameters:(id)parameters progress:(ProgressBlock)progress success:(SuccessBlock)success failure:(FailureBlock)failure;
 
 /**
  *  发送 GET 请求
@@ -37,6 +47,17 @@ typedef void (^FailureBlock)(AFHTTPRequestOperation *operation, NSError *error);
  *  @param failure    失败回调
  */
 - (void)GET:(NSString *)URLString parameters:(id)parameters success:(SuccessBlock)success failure:(FailureBlock)failure;
+
+/**
+ *  发送 POST 请求 (带进度)
+ *
+ *  @param URLString  接口地址
+ *  @param parameters 参数
+ *  @param progress   进度回调
+ *  @param success    成功回调
+ *  @param failure    失败回调
+ */
+- (void)POST:(NSString *)URLString parameters:(id)parameters progress:(ProgressBlock)progress success:(SuccessBlock)success failure:(FailureBlock)failure;
 
 /**
  *  发送 POST 请求
@@ -50,7 +71,7 @@ typedef void (^FailureBlock)(AFHTTPRequestOperation *operation, NSError *error);
 
 
 
-#pragma mark - 特定方法
+#pragma mark - Common Method
 
 
 /**
