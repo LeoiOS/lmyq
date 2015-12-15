@@ -99,7 +99,6 @@
     LCTabBarController *tabBarC = [[LCTabBarController alloc] init];
     tabBarC.viewControllers = @[navC1, navC2, navC3, navC4];
     self.window.rootViewController = tabBarC;
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

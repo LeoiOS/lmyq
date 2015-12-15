@@ -58,7 +58,10 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
     manager.requestSerializer.timeoutInterval = TIMEOUT_INTERVAL;
+    
+    [manager.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"appType"];
     
     [manager POST:[self validURLString:URLString] parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
         

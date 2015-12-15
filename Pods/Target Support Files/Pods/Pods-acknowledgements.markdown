@@ -104,7 +104,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## LCTabBarControllerForLM
+## LCTabBarController
 
 Copyright (c) 2015 Leo (http://www.leodong.com/)
 

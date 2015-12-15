@@ -24,7 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LCTabBarControllerForLM.xcscheme</key>
+		<key>LCTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>097EDC95C88890A2CE003DF2B30EDFB8</key>
+		<key>2C0308AC95CDAD76C0373F27B43F1756</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>81363CF01D9FB04EAF038FB245CE5E2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2A98D23EB4A6AB85BD893480385030D</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

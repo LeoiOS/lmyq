@@ -60,12 +60,12 @@ install_resource()
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "AMap2DMap/MAMapKit.framework/Versions/3.2.0.163b642/Resources/AMap.bundle"
   install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
-  install_resource "LCTabBarControllerForLM/LCTabBarController/LCTabBarController.bundle"
+  install_resource "LCTabBarController/LCTabBarController/LCTabBarController.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "AMap2DMap/MAMapKit.framework/Versions/3.2.0.163b642/Resources/AMap.bundle"
   install_resource "JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"
-  install_resource "LCTabBarControllerForLM/LCTabBarController/LCTabBarController.bundle"
+  install_resource "LCTabBarController/LCTabBarController/LCTabBarController.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
